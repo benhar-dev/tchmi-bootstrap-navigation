@@ -1,0 +1,54 @@
+﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-mode="Content" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-min-height="100" data-tchmi-min-height-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px">
+<div id="TcHmiRegion" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="340" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="53" data-tchmi-top-unit="px" data-tchmi-width="444" data-tchmi-width-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-target-content="Pages/Home.content" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-zindex="10">
+</div>
+<div id="MyNavBar" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-right="0" data-tchmi-zindex="1000">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="home" class="dropdown-item" href="#">Home Screen</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a id="settings" class="dropdown-item" href="#">Settings Screen</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+
+        $("#home").click(function () {
+            TcHmi.Controls.get('TcHmiRegion').setTargetContent('Pages/Home.content');
+        });
+
+        $("#settings").click(function () {
+            TcHmi.Controls.get('TcHmiRegion').setTargetContent('Pages/Settings.content')
+        });
+
+    </script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "OverflowVisible"
+]
+</script>
+</div>
+</div>
